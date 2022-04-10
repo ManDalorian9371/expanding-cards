@@ -1,10 +1,11 @@
 const panels = document.querySelectorAll('.pannels'); // select all panels and keep them in varriable
-
+let cunter = 1;
 // add event listener for each of pannels
-panels.forEach((panel) => {
+panels.forEach((panel, i) => {
 	panel.addEventListener('click', () => {
 		removeAllActives();
 		panel.classList.add('active');
+		cunter = i + 1;
 	});
 });
 // one f to remove all active pannels
@@ -14,7 +15,7 @@ function removeAllActives(){
 	});
 }
 // slideshow f and setinterval
-let cunter = 1;
+
 function slideShow(){
 	removeAllActives();
 
@@ -33,11 +34,11 @@ function startSlideShow(){
 	if (butt.value == 'ON') {
 		slideShow();
 		switchh = setInterval(slideShow, 3200);
-		butt.innerText = 'Stop The Slideshow';
+		butt.innerText = 'Stop !';
 		butt.value = 'OFF';
 	} else {
 		clearInterval(switchh);
-		butt.innerText = 'Start The Slideshow Again';
+		butt.innerText = 'Start Again !';
 		butt.value = 'ON';
 	}
 }
