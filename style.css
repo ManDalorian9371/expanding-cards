@@ -20,7 +20,7 @@ label {
 	padding: 15px 10px;
 	font-weight: bold;
 	color: rgb(10, 9, 37);
-	text-shadow: -6px 8px 10px rgba(6, 5, 29, 0.3), 0px 2px 2px rgba(12, 31, 32, 0.4);
+	text-shadow: -6px 8px 10px rgba(6, 5, 29, 0.2), 0px 2px 2px rgba(12, 31, 32, 0.2);
 }
 h1 {
 	margin: 0 0 5px 0;
@@ -70,7 +70,7 @@ button {
 	font-size: 14px;
 	cursor: pointer;
 	min-width: 100px;
-	min-height: 50px;
+	min-height: 20px;
 	width: fit-content;
 	margin-bottom: 1.5vh;
 	height: fit-content;
@@ -113,7 +113,7 @@ button:active {
 		display: none;
 	}
 	h1 {
-		font-size: 20px;
+		font-size: 15px;
 	}
 	button {
 		min-height: fit-content;
@@ -123,6 +123,7 @@ button:active {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+
 		font-size: 12px;
 		text-align: center;
 	}
