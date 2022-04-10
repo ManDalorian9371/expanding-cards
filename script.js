@@ -32,7 +32,7 @@ let switchh;
 function startSlideShow(){
 	if (butt.value == 'ON') {
 		slideShow();
-		switchh = setInterval(slideShow, 2000);
+		switchh = setInterval(slideShow, 3200);
 		butt.innerText = 'Stop The Slideshow';
 		butt.value = 'OFF';
 	} else {
